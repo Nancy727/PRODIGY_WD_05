@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('Assets/sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 50, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.main-container {
+    margin-top: 100px; 
+    width: 100%;
+    max-width: 800px;
+    flex-grow: 1; /* This will make sure the container grows to fill the available space */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#locationInput {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 42px);
+    border-radius: 10px;
+    border: none;
+}
+
+#weatherDisplay {
+    margin-top: 20px;
+}
+
+.weather-info {
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weather-info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.weather-info h2 {
+    margin-top: 0;
+}
+
+#getWeatherBtn {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#getWeatherBtn:hover {
+    cursor: pointer;
+    background-color: rgba(239, 237, 235, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-facts {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fact-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 250px;
+}
+
+.fact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
